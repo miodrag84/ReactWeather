@@ -11,13 +11,13 @@ app.use(function (req, res, next){
 
   } else {
     next();
-    
+
     }
 });
 app.use(express.static('public'));
 console.log("Hello!");
 
-//app.listen(PORT,() => {
-app.listen(PORT, function () {
-  console.log("server starter port 3000" + PORT);
+app.listen(PORT, () => {
+//app.listen(PORT, function () {
+  console.log("server starter port " + PORT);
 });
